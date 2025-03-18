@@ -6,21 +6,25 @@ public class Exc04{
 
         int age = 0;
         System.out.print("Qual a idade?");
-        leia .nextInt();
+        age = leia.nextInt();
 
         if (age >= 18){
             System.out.println("Voto obrigatório");
-
-            if (age >= 16 && < 18){
-            System.out.println("Voto obrigatório");
-
-                if (age >= 18){
-                System.out.println("Voto obrigatório");
-
-            
+            }
+        else{
+            if (age >= 16 && age < 18) {
+                System.out.println("Voto facultativo");
+            }
+            else{
+                if (age < 16){
+                    System.out.println("Voce não pode votar");    
                 }
+
             }
         }
+
+
+       
 
        
 
