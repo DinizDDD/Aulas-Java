@@ -10,14 +10,18 @@ public class Exc04{
 
         if (age >= 18){
             System.out.println("Voto obrigatório");
+
+            if (age >= 16 && < 18){
+            System.out.println("Voto obrigatório");
+
+                if (age >= 18){
+                System.out.println("Voto obrigatório");
+
+            
+                }
+            }
         }
 
-        
-            
-
-
-
-  
        
 
         leia.close();
