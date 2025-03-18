@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exemplo001{
+public class Exemplos{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 

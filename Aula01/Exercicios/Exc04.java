@@ -1,16 +1,19 @@
 import java.util.Scanner;
 
-public class Exemplo001{
+public class Exc04{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 
-        int age = "";
+        int age = 0;
         System.out.print("Qual a idade?");
         leia .nextInt();
 
         if (age >= 18){
-            System
+            System.out.println("Voto obrigatório");
         }
+
+        
+            
 
 
 
