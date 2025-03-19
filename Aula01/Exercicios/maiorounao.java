@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exc02{
+public class maiorounao{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 

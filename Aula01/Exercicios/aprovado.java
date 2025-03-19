@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exc03{
+public class aprovado{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 
