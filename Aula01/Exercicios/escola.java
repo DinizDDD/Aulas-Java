@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class aprovado{
+public class escola{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 

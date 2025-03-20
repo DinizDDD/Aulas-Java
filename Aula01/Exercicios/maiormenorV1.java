@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class maiorounao{
+public class maiormenorV1{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 

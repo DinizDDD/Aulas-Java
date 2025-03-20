@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exc06{
+public class parimpar{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 

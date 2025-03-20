@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exc07{
+public class IMC{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 
