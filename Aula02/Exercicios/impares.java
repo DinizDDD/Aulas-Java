@@ -1,5 +1,3 @@
-package Aula02.Exercicios;
-
 import java.util.Scanner;
 
 public class impares{
@@ -11,16 +9,10 @@ public class impares{
         n = leia.nextInt();
 
         for (int i = 0; i <= n; i++){
-            if (i % 2 != 1){
+            if (i % 2 != 0){
                 System.out.println(i);
             }
         }
-
-
-
-
-
-        // TESTAR ESSE
         
         
         leia.close();

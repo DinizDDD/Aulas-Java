@@ -1,5 +1,3 @@
-package Aula02.Exercicios;
-
 import java.util.Scanner;
 
 public class pairornot{
@@ -15,8 +13,6 @@ public class pairornot{
         } else {
             System.out.println("Esse número é impar");
         }
-
-        // TESTAR ESSE
         
         
         leia.close();

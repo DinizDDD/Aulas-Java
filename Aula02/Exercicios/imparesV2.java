@@ -1,5 +1,3 @@
-package Aula02.Exercicios;
-
 import java.util.Scanner;
 
 public class imparesV2{
@@ -20,7 +18,6 @@ public class imparesV2{
             i++;
         }
 
-        // TESTAR ESSE
        
         leia.close();
     }

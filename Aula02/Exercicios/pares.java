@@ -1,5 +1,3 @@
-package Aula02.Exercicios;
-
 import java.util.Scanner;
 
 public class pares{
