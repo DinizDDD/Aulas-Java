@@ -2,7 +2,7 @@ package Aula02.Exercicios;
 
 import java.util.Scanner;
 
-public class pairornot{
+public class imparesV2{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 
@@ -10,16 +10,18 @@ public class pairornot{
         System.out.println("Qual o número?");
         n = leia.nextInt();
 
-        if (n % 2 == 0){
-            System.out.println("Esse número é par");
-        } else {
-            System.out.println("Esse número é impar");
+        int i = 0;
+
+        while (i <= n){
+            if (i % 2 != 0){
+                System.out.println(i);
+            }
+
+            i++;
         }
 
         // TESTAR ESSE
-        
-        
+       
         leia.close();
     }
 }
-
