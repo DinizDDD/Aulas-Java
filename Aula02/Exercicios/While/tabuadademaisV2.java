@@ -1,6 +1,7 @@
+package While;
 import java.util.Scanner;
 
-public class paresV2{
+public class tabuadademaisV2{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 
@@ -11,14 +12,15 @@ public class paresV2{
         int i = 0;
 
         while (i <= n){
-            if (i % 2 == 0){
-                System.out.println(i);
-            }
+            int product = n + i;
+            System.out.println(n+ " + " +i+ " = " +product);
 
             i++;
+    
         }
 
        
         leia.close();
     }
 }
+

@@ -13,19 +13,19 @@ public class salario{
         if (salario <= 2259.20){
             System.out.println("Seu salario não recebe imposto")
         } else{
-            if (salario <= 2.826,65){
+            if (salario <= 2826.65){
                 System.out.println("Seu salario recebe 	7,5% de impostos")
                 pagamento = salario * 0.075;
             } else {
-                if (salario <= 3.751,05){
+                if (salario <= 3751.05){
                     System.out.println("Seu salario recebe 15% de impostos")
                     pagamento = salario * 0.15;
                 } else {
-                    if (salario <= 4.664,68){
+                    if (salario <= 4664.68){
                         System.out.println("Seu salario recebe 22,5% de impostos")  
                         pagamento = salario * 0.225;
                     } else {
-                        if (salario > 4.664,68){
+                        if (salario > 4664.68){
                             System.out.println("Seu salario recebe 27,5% de impostos")
                             pagamento = salario * 0.75;
                         }                      

@@ -1,6 +1,7 @@
+package For;
 import java.util.Scanner;
 
-public class paresV3{
+public class contador{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 
@@ -8,17 +9,10 @@ public class paresV3{
         System.out.println("Qual o número?");
         n = leia.nextInt();
 
-        int i = 0;
+        for (int i = 1; i <= n; i++) {
+            System.out.println(i); 
+        }
 
-        do{
-            if (i % 2 == 0){
-                System.out.println(i);
-            }
-
-            i++;
-        } while (i <= n);
-
-       
         leia.close();
     }
 }

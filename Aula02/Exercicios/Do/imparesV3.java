@@ -1,6 +1,7 @@
+package Do;
 import java.util.Scanner;
 
-public class contadorV2{
+public class imparesV3{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 
@@ -8,22 +9,18 @@ public class contadorV2{
         System.out.println("Qual o número?");
         n = leia.nextInt();
 
-        int i = 1;
+        int i = 0;
 
-        while (i <= n){
-            System.out.println(i);
+        do{
+            if (i % 2 != 0){
+                System.out.println(i);
+            }
+
             i++;
-        }
+        } while (i <= n);
 
-
-
-
-        
-
-
-        
-
-
+       
         leia.close();
     }
 }
+

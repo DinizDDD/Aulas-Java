@@ -1,3 +1,4 @@
+package Simples;
 import java.util.Scanner;
 
 public class hello{

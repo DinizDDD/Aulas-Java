@@ -1,6 +1,7 @@
+package Simples;
 import java.util.Scanner;
 
-public class bigger{
+public class diferenca{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 
@@ -12,14 +13,20 @@ public class bigger{
         System.out.println("Qual o segundo número?");
         n2 = leia.nextInt();
 
-        if (n1 > n2){
-            System.out.println(n1+ " é maior que "+n2);
-        } else {
-            System.out.println(n2+ " é maior que "+n1);
-        
+        if (n2 > n1){
+            int lib = n2;
+            n2 = n1;
+            n1 = lib;
         }
 
+        int diferenca = n1 - n2;
 
+        System.out.println("A distância entre esses números é "+diferenca);
+
+
+
+
+       
         leia.close();
     }
 }

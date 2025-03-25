@@ -1,6 +1,7 @@
+package While;
 import java.util.Scanner;
 
-public class contador{
+public class contadorV2{
     public static void main(String args[]){
         Scanner leia = new Scanner (System.in);
 
@@ -8,11 +9,22 @@ public class contador{
         System.out.println("Qual o número?");
         n = leia.nextInt();
 
-        for (int i = 1; i <= n; i++) {
-            System.out.println(i); 
+        int i = 1;
+
+        while (i <= n){
+            System.out.println(i);
+            i++;
         }
+
+
+
+
+        
+
+
+        
+
 
         leia.close();
     }
 }
-

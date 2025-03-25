@@ -1,3 +1,4 @@
+package For;
 import java.util.Scanner;
 
 public class impares{
