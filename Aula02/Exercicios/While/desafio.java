@@ -1,4 +1,4 @@
-package For;
+package While;
 import java.util.Scanner;
 
 public class desafio{
@@ -9,10 +9,15 @@ public class desafio{
         System.out.println("Qual o número?");
         n = leia.nextInt();
 
-        for (int i = 1; i <= n; i++) {
+        int i = 1;
+
+        while (i <= n){
             if (i % 2 == 0 || i % 3 == 0){
                 System.out.println(i);
             }
+
+            i++;
+
         }
 
         leia.close();
