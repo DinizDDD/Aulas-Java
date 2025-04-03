@@ -11,11 +11,11 @@ public class pessoas{
         // b. média de altura dos homens;
         // c. o número de mulheres.
 
-        int sex = 0; double height = 0; double bigger = 0; double minor = 0; double sumH = 0; double mediaH = 0; int womans = 0; int mans = 0;
+        int sex = 0; double height = 0.00; double bigger = 0; double minor = 10; double sumH = 0; double mediaH = 0; int womans = 0; int mans = 0;
 
-        for (int i = 0; i <= 10; i++){
+        for (int i = 0; i <= 3; i++){
             
-            System.out.println("Qual o gênero da pessoa?");
+            System.out.println("\n\n Qual o gênero da pessoa?");
             System.out.println("1 = Homem || 2 = Mulher");
             sex = leia.nextInt();
 
@@ -44,7 +44,7 @@ public class pessoas{
         mediaH = sumH / mans;
 
         System.out.println("A maior altura é "+bigger+ " e a menor "+minor);
-        System.out.println("A média da altura dos homens é "+mediaH);
+        System.out.println("A média entre os homens é "+String.format("%.2f", mediaH));
         System.out.println("A quantidade de mulheres é "+womans);
 
 
