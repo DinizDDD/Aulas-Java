@@ -20,11 +20,17 @@ public class Main {
 
         // Assim como no exemplo anterior, o nome é alterado das duas formas por ser public
         produto1.setNome("Davi");
+        System.out.println(produto1.getNome());
         produto1.name = "Eduardo";
+        System.out.println(produto1.getNome());
+
+        
 
         // agora o preço que é private, só funciona com o set
         produto1.setPrice(25);
         // produto1.price = 30;
+
+        produto1.setPrice(-25);
 
         
         
