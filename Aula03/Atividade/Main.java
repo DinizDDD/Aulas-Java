@@ -8,6 +8,11 @@ public class Main {
 
         Product produto1 = new Product("Almondega", 10.00);
 
+        produto2 = new Product();
+        produto2.name = "Ovo";
+        produto2.price = "6.00";
+
+
         // o atributo nome, é public, então ele funciona das duas formas
         System.out.println(produto1.name);
         System.out.println(produto1.getNome());

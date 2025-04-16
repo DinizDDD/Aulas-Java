@@ -9,6 +9,7 @@ class Product {
         this.price = price;
     }
 
+
     void Info() {
         System.out.println("Nome: " + name);
         System.out.println("Preço: " + price);
