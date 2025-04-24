@@ -9,12 +9,6 @@ class Product {
         this.price = price;
     }
 
-    public Ovo() {
-        this.name = "Ovo";
-        this.price = 6.00;
-    }
-
-
     void Info() {
         System.out.println("Nome: " + name);
         System.out.println("Preço: " + price);

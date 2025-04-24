@@ -8,17 +8,13 @@ public class Main {
 
         Product produto1 = new Product("Almondega", 10.00);
 
-        produto2 = new Product();
-        produto2.name = "Ovo";
-        produto2.price = "6.00";
-
 
         // o atributo nome, é public, então ele funciona das duas formas
         System.out.println(produto1.name);
         System.out.println(produto1.getNome());
 
         // agora o preço, é private, então ele só printa utilizando o getPrice()
-        // System.out.println(produto1.price);
+        System.out.println(produto1.price);
         System.out.println(produto1.getPrice());
 
 
@@ -33,7 +29,7 @@ public class Main {
 
         // agora o preço que é private, só funciona com o set
         produto1.setPrice(25);
-        // produto1.price = 30;
+        produto1.price = 30;
 
         produto1.setPrice(-25);
 
