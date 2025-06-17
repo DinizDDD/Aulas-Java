@@ -1,4 +1,8 @@
+package Projeto;
 import javax.swing.*;
+
+import testes.ImageGalleryApp;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
@@ -43,7 +47,7 @@ public class Gallery extends JFrame {
 
     // Funções para acões
 
-            public static void main(String[] args) {
+        public static void main(String[] args) {
         SwingUtilities.invokeLater(ImageGalleryApp::new);
         }
 
