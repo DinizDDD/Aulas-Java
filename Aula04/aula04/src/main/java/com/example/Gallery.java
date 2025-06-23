@@ -1,5 +1,7 @@
 package com.example;
 
+
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -23,7 +25,7 @@ public class Gallery extends JFrame {
         thumbnailPanel = new JPanel();
         thumbnailPanel.setLayout(new GridLayout(0, 3, 5, 5));
         scrollPane = new JScrollPane(thumbnailPanel);
-        scrollPane.setPreferredSize(new Dimension(300, 600));
+        scrollPane.setPreferredSize(new Dimension(350, 600));
 
         imagePreviewLabel = new JLabel("Selecione uma imagem", JLabel.CENTER);
         imagePreviewLabel.setPreferredSize(new Dimension(500, 600));
@@ -56,46 +58,59 @@ public class Gallery extends JFrame {
         }
     }
 
-        private void loadImagesFromFolder(File folder) {
-        thumbnailPanel.removeAll();
-        File[] files = folder.listFiles((dir, name) -> {
-            String nameLc = name.toLowerCase();
-            return nameLc.endsWith(".jpg") || nameLc.endsWith(".jpeg") || nameLc.endsWith(".png") || nameLc.endsWith(".gif");
-        });
+    private void showImage(File imageFile) {
+    try {
+        BufferedImage img = ImageIO.read(imageFile);
+        if (img != null) {
+            ImageIcon icon = new ImageIcon(img.getScaledInstance(imagePreviewLabel.getWidth(), imagePreviewLabel.getHeight(), Image.SCALE_SMOOTH));
+            imagePreviewLabel.setIcon(icon);
+            imagePreviewLabel.setText("");
+        }
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
 
-        if (files != null) {
-            for (File imageFile : files) {
-                try {
-                    BufferedImage img = ImageIO.read(imageFile);
-                    if (img != null) {
-                        ImageIcon thumbnailIcon = new ImageIcon(img.getScaledInstance(100, 100, Image.SCALE_SMOOTH));
-                        JLabel thumbLabel = new JLabel(thumbnailIcon);
-                        thumbLabel.setBorder(BorderFactory.createLineBorder(Color.GRAY));
-                        thumbLabel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+    private void loadImagesFromFolder(File folder) {
+    thumbnailPanel.removeAll();
+    File[] files = folder.listFiles((dir, name) -> {
+        String nameLc = name.toLowerCase();
+        return nameLc.endsWith(".jpg") || nameLc.endsWith(".jpeg") || nameLc.endsWith(".png") || nameLc.endsWith(".gif");
+    });
 
-                        thumbLabel.addMouseListener(new MouseAdapter() {
-                            @Override
-                            public void mouseClicked(MouseEvent e) {
-                                showImage(imageFile);
-                            }
-                        });
+    if (files != null) {
+        for (File imageFile : files) {
+            try {
+                BufferedImage img = ImageIO.read(imageFile);
+                if (img != null) {
+                    ImageIcon thumbnailIcon = new ImageIcon(img.getScaledInstance(100, 100, Image.SCALE_SMOOTH));
+                    JLabel thumbLabel = new JLabel(thumbnailIcon);
+                    thumbLabel.setBorder(BorderFactory.createLineBorder(Color.GRAY));
+                    thumbLabel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 
-                        thumbnailPanel.add(thumbLabel);
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
+                    thumbLabel.addMouseListener(new MouseAdapter() {
+                        @Override
+                        public void mouseClicked(MouseEvent e) {
+                            showImage(imageFile);
+                        }
+                    });
+
+                    thumbnailPanel.add(thumbLabel);
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
+    }
 
-        thumbnailPanel.revalidate();
-        thumbnailPanel.repaint();
+    thumbnailPanel.revalidate();
+    thumbnailPanel.repaint();
     }
 
     
 
         public static void main(String[] args) {
-        SwingUtilities.invokeLater(ImageGalleryApp::new);
+        SwingUtilities.invokeLater(Gallery::new);
         }
 
 }
