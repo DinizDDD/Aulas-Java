@@ -4,17 +4,18 @@ import java.util.Scanner;
         public static void main(String args[]){
             Scanner leia = new Scanner (System.in);
 
-            int n1 = 0;
+            int i = 0;
             System.out.println("Informe o número:");
-            n1 = leia.nextInt();
+            i = leia.nextInt();
 
-            if (n1 % 2 == 0){
-                System.out.println("Esse número é par");
+            if (i >= 18){
+                System.out.println("Voce é maior de idade");
             } else {
-                System.out.println("Esse número é impar");
+                System.out.println("Voce é menor de idade");
             }
     
             leia.close();
         }
     }
+
 
