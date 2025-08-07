@@ -19,7 +19,7 @@ import java.util.Scanner;
             } else{
                 if (media >= 5 && media < 7);
                     System.out.println("Vc está de recuperção");
-            } else {
+            } else{
                 if (media < 5){
                     System.out.println("Vc foi reprovado");
                 }
